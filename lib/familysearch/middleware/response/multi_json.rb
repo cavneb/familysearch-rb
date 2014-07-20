@@ -19,4 +19,4 @@ module FamilySearch
   end
 end
 
-Faraday.register_middleware :response, :multi_json => FamilySearch::Middleware::MultiJsonParse
+Faraday::Response.register_middleware :response, :multi_json => FamilySearch::Middleware::MultiJsonParse
